@@ -22,10 +22,10 @@ PPT.getAbsolutePath(pathname,workDirectory=getwd(),expandTilde=FALSE,...)
   
 }
 \references{ 
-See function "getAbsolutePath" from package Rutils: \url{ http://cran.r-project.org/web/packages/R.utils/index.html}.
+See function "getAbsolutePath" from package Rutils: \url{ https://cran.r-project.org/package=R.utils}.
 
 }
-\author{Henrik Bengtsson \url{(http://www.braju.com/R/)} and modified by Wayne Jones \email{wayne_betws@hotmail.com}}
+\author{Henrik Bengtsson \url{(http://www.braju.com/R/)} and modified by Wayne Jones \email{wayne.w.jones@shell.com}}
 %\note{}
 
 

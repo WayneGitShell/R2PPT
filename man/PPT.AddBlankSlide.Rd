@@ -21,10 +21,10 @@ PPT.AddBlankSlide(ppt)
   
 }
 \references{ 
-See \url{ http://sunsite.univie.ac.at/rcom} for more details on rcom and \url{http://www.omegahat.org/RDCOMClient/} for more details on RDCOMClient.
+See \url{https://github.com/omegahat/RDCOMClient} for more details on RDCOMClient.
 }
 
-\author{ Wayne Jones \email{wayne_betws@hotmail.com}}
+\author{ Wayne Jones \email{wayne.w.jones@shell.com}}
 \section{Warning}{You must save the returned list of COM objects initialised with PPT.Init to an R object. See the example. }
 %\note{}
 \seealso{\code{\link{PPT.Init}},\code{\link{PPT.AddTitleSlide}},\code{\link{PPT.AddTextSlide}},\cr

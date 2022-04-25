@@ -1,14 +1,5 @@
 "PPT.AddDataFrame"<-function (ppt, df = stop("Data frame must be specified"), size = c(120,110,480,320), row.names = TRUE, col.names = TRUE){
 
-if(ppt$method=="rcom"){
-
-    if (!comIsValidHandle(ppt$ppt)) 
-        stop("Invalid handle for powerpoint application")
-    if (!comIsValidHandle(ppt$pres)) 
-        stop("Invalid handle for powerpoint presentation")
-    if (!comIsValidHandle(ppt$Current.Slide)) 
-        stop("Invalid handle for presentation slide. Make sure you add a slide before adding a data frame.")
-}
 
 
     if (length(size) != 4) 
@@ -21,10 +12,10 @@ if(ppt$method=="rcom"){
     PPTtemp <- paste(tempfile(), "csv", sep = ".")
     PPTtemp <- gsub("/", "\\\\", PPTtemp)
     if (!col.names) {
-        write.table(df, file = PPTtemp, row.names = row.names,col.names = col.names, sep = ",")
+        utils::write.table(df, file = PPTtemp, row.names = row.names,col.names = col.names, sep = ",")
     }
     else {
-        write.csv(df, file = PPTtemp, row.names = row.names)
+        utils::write.csv(df, file = PPTtemp, row.names = row.names)
     }
 
     #myShapes <- comGetProperty(ppt$Current.Slide, "Shapes")
