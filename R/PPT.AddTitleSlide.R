@@ -1,11 +1,6 @@
 "PPT.AddTitleSlide" <-function(ppt,title=NULL,subtitle=NULL,title.font=NULL,title.fontsize=NULL,subtitle.font=NULL,subtitle.fontsize=NULL){
 
-if(ppt$method=="rcom"){
 
-	if(!comIsValidHandle(ppt$ppt))   stop("Invalid handle for powerpoint application")
-	if(!comIsValidHandle(ppt$pres))  stop("Invalid handle for powerpoint presentation")
-
-}
 
 #ppt$Current.Slide <- comInvoke(comGetProperty(ppt$pres,"Slides"),"Add",comGetProperty(comGetProperty(ppt$pres,'Slides'),'Count')+1,1)
 #comInvoke(ppt$Current.Slide,'Select')

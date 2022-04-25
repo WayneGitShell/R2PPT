@@ -7,7 +7,8 @@ Adds an R graphics output to the current slide of the PowerPoint presentation us
 Graphics output can either be a graphical output file or the current R graphics device as specified by \code{dev.cur}.
 }
 \usage{
-PPT.AddGraphicstoSlide(ppt, file = NULL, size = c(10, 10, 700, 500), dev.out.type = "jpeg")
+PPT.AddGraphicstoSlide(ppt, file = NULL, 
+size = c(10, 10, 700, 500), dev.out.type = "jpeg")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -26,10 +27,10 @@ PPT.AddGraphicstoSlide(ppt, file = NULL, size = c(10, 10, 700, 500), dev.out.typ
   
 }
 \references{ 
-See \url{ http://sunsite.univie.ac.at/rcom} for more details on rcom and \url{http://www.omegahat.org/RDCOMClient/} for more details on RDCOMClient.
+See \url{https://github.com/omegahat/RDCOMClient} for more details on RDCOMClient.
 }
 
-\author{ Wayne Jones \email{wayne_betws@hotmail.com}}
+\author{ Wayne Jones \email{wayne.w.jones@shell.com}}
 \section{Warning}{You must save the returned list of COM objects initialised with PPT.Init to an R object. See the example. }
 %\note{}
 \seealso{\code{\link{PPT.Init}},\code{\link{PPT.AddTitleSlide}},\code{\link{PPT.AddTextSlide}},\cr
@@ -51,6 +52,7 @@ myPres<-PPT.AddGraphicstoSlide(myPres,file=paste(getwd(),"testRplot1.jpeg",sep="
 unlink(paste(getwd(),"testRplot1.jpeg",sep="/"))
 ## Example adding graphic from current graphics device
 myPres<-PPT.AddBlankSlide(myPres)
+windows()
 hist(rnorm(100))
 myPres<-PPT.AddGraphicstoSlide(myPres,size= c(10, 10, 300, 500))
 hist(runif(100))

@@ -6,12 +6,12 @@
 Opens an existing PowerPoint presentation.
 }
 \usage{
-PPT.Open(file=stop("filename must be specified"),method=c("rcom","RDCOMClient"))
+PPT.Open(file=stop("filename must be specified"),method="RDCOMClient")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
 \item{file}{Required filename giving the full file path to existing PowerPoint presentation. See example.}
-\item{method}{Choice of underlying COM technology to open the PowerPoint presentation. Choice of either rcom or RDCOMClient. Defaults to rcom.}
+\item{method}{Choice of underlying COM technology method to implement R2PPT. Legacy function input, always uses RDCOMClient now.}
 
 }
 %\details{}
@@ -20,10 +20,10 @@ PPT.Open(file=stop("filename must be specified"),method=c("rcom","RDCOMClient"))
 }
 
 \references{ 
-See \url{ http://sunsite.univie.ac.at/rcom} for more details on rcom and \url{http://www.omegahat.org/RDCOMClient/} for more details on RDCOMClient.
+See \url{https://github.com/omegahat/RDCOMClient} for more details on RDCOMClient.
 }
 
-\author{ Wayne Jones \email{wayne_betws@hotmail.com}}
+\author{ Wayne Jones \email{wayne.w.jones@shell.com}}
 \section{Warning}{You must save the returned list of COM objects initialised with PPT.Init to an R object. See the example. }
 
 %\note{}

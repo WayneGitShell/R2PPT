@@ -2,19 +2,15 @@
 
 #Check a slide exists
 
-if(ppt$method=="rcom"){
 
-	if(!comIsValidHandle(ppt$ppt))   stop("Invalid handle for powerpoint application")
-	if(!comIsValidHandle(ppt$pres))  stop("Invalid handle for powerpoint presentation")
-	if(!comIsValidHandle(ppt$Current.Slide))  stop("Invalid handle for presentation slide. Make sure you add a slide before adding graphic.")
-
-}
 
 if(length(size)!=4) stop("Graphic size to export to PowerPoint must be a vector of length 4")
 
 
-if(!is.null(file[1])){file[1]<-PPT.getAbsolutePath(file[1])} #New in Version 1.1
-
+#if(!is.null(file[1])){file[1]<-PPT.getAbsolutePath(file[1])} #New in Version 1.1
+if(!is.null(file[1])){file[1]<-normalizePath(file[1])} #New in Version 2.2
+  
+  
 if(!is.null(file[1]) && !file.exists(file[1])) stop(paste(file[1],"does not exist"))
 
 if(!is.null(file[1]) && file.exists(file[1])){

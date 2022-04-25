@@ -6,7 +6,8 @@
 Adds a slide to the current PowerPoint presentation of Microsoft type 'ppLayoutText'.
 }
 \usage{
-PPT.AddTextSlide(ppt, title = NULL, title.fontsize = NULL, title.font = NULL, text = NULL, text.fontsize = NULL, text.font = NULL)
+PPT.AddTextSlide(ppt, title = NULL, title.fontsize = NULL, 
+title.font = NULL, text = NULL, text.fontsize = NULL, text.font = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -28,10 +29,10 @@ PPT.AddTextSlide(ppt, title = NULL, title.fontsize = NULL, title.font = NULL, te
   
 }
 \references{ 
-See \url{ http://sunsite.univie.ac.at/rcom} for more details on rcom and \url{http://www.omegahat.org/RDCOMClient/} for more details on RDCOMClient.
+See \url{https://github.com/omegahat/RDCOMClient} for more details on RDCOMClient.
 }
 
-\author{ Wayne Jones \email{wayne_betws@hotmail.com}}
+\author{ Wayne Jones \email{wayne.w.jones@shell.com}}
 \section{Warning}{You must save the returned list of COM objects initialised with PPT.Init to an R object. See the example. }
 %\note{}
 \seealso{\code{\link{PPT.Init}},\code{\link{PPT.AddTitleSlide}},\code{\link{PPT.AddTextSlide}},\cr
@@ -42,8 +43,6 @@ See \url{ http://sunsite.univie.ac.at/rcom} for more details on rcom and \url{ht
 
 \dontrun{
 myPres<-PPT.Init() 
-#or 
-#myPres<-PPT.Init(method="RDCOMClient")
 myPres<-PPT.AddBlankSlide(myPres)
 myPres<-PPT.AddTitleSlide(myPres,title="Title Slide",subtitle="Subtitle here")
 myPres<-PPT.AddTitleOnlySlide(myPres,title="Title Only",title.fontsize=40,title.font="Arial")

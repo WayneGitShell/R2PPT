@@ -3,3 +3,4 @@
 
 # Export all names
 exportPattern(".")
+importFrom("grDevices", "dev.cur", "dev.list", "savePlot")
