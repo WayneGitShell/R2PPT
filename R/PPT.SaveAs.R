@@ -3,7 +3,7 @@
 
 
 #file<-PPT.getAbsolutePath(file)
-file<-normalizePath(file[1]) #New in Version 2.2
+file<-normalizePath(file[1],mustWork = FALSE) #New in Version 2.2
 
 file<-gsub("/","\\\\",as.character(file)) #character should be \\\\ and not / some legacy compatibility issues. 
 

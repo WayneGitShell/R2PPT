@@ -43,8 +43,6 @@ See \url{https://github.com/omegahat/RDCOMClient} for more details on RDCOMClien
 
 \dontrun{
 myPres<-PPT.Init() 
-#or 
-#myPres<-PPT.Init(method="RDCOMClient")
 myPres<-PPT.AddBlankSlide(myPres)
 myPres<-PPT.AddTitleSlide(myPres,title="Title Slide",subtitle="Subtitle here")
 myPres<-PPT.AddTitleOnlySlide(myPres,title="Title Only",title.fontsize=40,title.font="Arial")

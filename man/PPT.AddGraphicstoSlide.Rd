@@ -52,6 +52,7 @@ myPres<-PPT.AddGraphicstoSlide(myPres,file=paste(getwd(),"testRplot1.jpeg",sep="
 unlink(paste(getwd(),"testRplot1.jpeg",sep="/"))
 ## Example adding graphic from current graphics device
 myPres<-PPT.AddBlankSlide(myPres)
+windows()
 hist(rnorm(100))
 myPres<-PPT.AddGraphicstoSlide(myPres,size= c(10, 10, 300, 500))
 hist(runif(100))
