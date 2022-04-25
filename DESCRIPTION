@@ -1,7 +1,7 @@
 Package: R2PPT
 Title: Simple R Interface to Microsoft PowerPoint using RDCOMClient
 Suggests: RDCOMClient
-Version: 2.2
+Version: 2.2.0
 Author: Wayne Jones <wayne.w.jones@shell.com>
 Maintainer: Wayne Jones <wayne.w.jones@shell.com>
 Description: R2PPT provides a simple set of wrappers to easily use 
