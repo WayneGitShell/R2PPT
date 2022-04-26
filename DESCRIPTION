@@ -4,7 +4,7 @@ Suggests: RDCOMClient
 Version: 2.2.0
 Author: Wayne Jones <wayne.w.jones@shell.com>
 Maintainer: Wayne Jones <wayne.w.jones@shell.com>
-Description: R2PPT provides a simple set of wrappers to easily use 
+Description: Provides a simple set of wrappers to easily use 
          RDCOMClient for generating Microsoft PowerPoint presentations.
 License: GPL-3
 Depends: R (>= 2.3.0)
