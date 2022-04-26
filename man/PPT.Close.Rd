@@ -19,7 +19,7 @@ PPT.Close(ppt)
 }
 
 \references{ 
-See \url{https://github.com/omegahat/RDCOMClient} for more details on RDCOMClient.
+See \url{https://github.com/omegahat/RDCOMClient} for more details on RDCOMClient and \url{https://github.com/waynegitshell/R2PPT/} for R2PPT source code. 
 }
 
 \author{ Wayne Jones \email{wayne.w.jones@shell.com}}

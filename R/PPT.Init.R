@@ -17,7 +17,7 @@
     }
 	
 
-    ppt$ppt <- RDCOMClient::COMCreate("PowerPoint.Application")
+    ppt$ppt <- COMCreate("PowerPoint.Application")
 
 
     
